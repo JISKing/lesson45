@@ -25,7 +25,7 @@ function App() {
   const validator = () => {
     if (
       /^[a-zA-Z0-9]+(?: [a-zA-Z0-9]+)* *$/.test(newProducts.name) &&
-      newProducts.price >= 0
+      newProducts.price > 0
     ) {
       return true;
     } else {
